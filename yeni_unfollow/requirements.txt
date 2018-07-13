@@ -1,0 +1,17 @@
+beautifulsoup4==4.6.0
+bs4==0.0.1
+DateTime==4.2
+numpy==1.14.3
+pandas==0.22.0
+Pillow==5.1.0
+PyAutoGUI==0.9.36
+PyMsgBox==1.0.6
+PyScreeze==0.1.14
+python-dateutil==2.7.2
+PyTweening==1.0.3
+pytz==2018.4
+selenium==3.11.0
+six==1.11.0
+xlib==0.21
+zope.interface==4.5.0
+pyobjc-framework-Quartz==4.2.2
