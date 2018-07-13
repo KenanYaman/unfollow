@@ -1,0 +1,13 @@
+# unfollow
+Python3 ile yazdım, instagramdan takipçi çıkartmayı sağlıyor
+
+Programı sanal çalışma alanı oluşturup orada çalıştırırsanız daha sağlıklı olur, sistemde bulunan kütüphaneler ile çakışmamış olur. (Kullanım: https://www.sinanerdinc.com/python-virtualenv-kullanimi)
+
+Sanal ortam oluşturduktan sonra gerekli bağımlılıkları pip install -r requirements.txt ile kuruyoruz. Bağımlılıkları yükledikten sonra
+python3 main_unfollow.py koduyla programı başlatıyoruz. Macos, windows ve linuxte çalışıyor. 
+
+Çalışma mantığı: 
+Hesap bilgilerinizi programa giriyorsunuz, Hesaplar klasörü oluşturuluyor ve içine txt formatında bilgiler kayıt ediliyor (şifreler açık bir şekilde kayıt ediliyor bunu göz önünde bulundurarak kullanın programı)
+sonrasında program Google Chrome başlatıyor instagrama giriş yapıyor (verdiğiniz bilgiler ile) profil sayfasına gidiyor ve takipçileri tek tek çıkarmaya başlıyor.
+Bu işlem arka planda oluyor, bunu görmek isterseniz eğer, 54. satırdaki kodun (self.driver = webdriver.Chrome(executable_path=CHROMEDRIVER_PATH, chrome_options=chrome_options)) içinden  chrome_options satırının çıkarın.
+Bu şekilde canlı olarak programın ne yaptığının görebilirsiniz.
